@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="cadastro.css" rel="stylesheet" />
+    <title>Registrar</title>
+</head>
+
+<body>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend><b>Registrar</b></legend>
+                <br>
+                <!--CADASTRO DE NOME E-MAIL E TELEFONE-->
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome Completo</label>
+                </div>
+                <br><br>
+
+                <div class="inputBox">
+                    <input type="email" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">E-mail</label>
+                </div>
+                <br><br>
+
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="tel" class="labelInput">Telefone</label>
+                </div>
+                <br>
+
+                <!--CADASTRO DE SEXO-->
+                <div class="sexo">
+                    <p>Sexo</p>
+                    <input type="radio" name="onlyOne" id="feminino" class="inputRadio" required>
+                    <label for="feminino" class="labelRadio">Feminino</label>
+
+
+                    <input type="radio" name="onlyOne" id="masculino" class="inputRadio" required>
+                    <label for="masculino" class="labelRadio">Masculino</label>
+
+                    <input type="radio" name="onlyOne" id="outros" class="inputRadio" required>
+                    <label for="outros" class="inputRadio">Outros</label>
+                </div>
+                <br><br>
+                <!--DATA DE NASCIMENTO-->
+                <div>
+                    <p>Data de Nascimento</p>
+                    <input type="date" name="dataNascimento" id="dataNascimento" class="inputUser" required>
+                    <label for="dataNascimento" class="labelInput"></label>
+                </div>
+                <br><br>
+                <!--CIDADE ESTADO E PAÍS-->
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labelInput">Cidade</label>
+                </div>
+                <br><br>
+
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <label for="estado" class="labelInput">Estado</label>
+                </div>
+                <br><br>
+
+                <div class="inputBox">
+                    <input type="text" name="pais" id="pais" class="inputUser" required>
+                    <label for="pais" class="labelInput">País</label>
+                </div>
+                <br><br>
+
+                <!--BOTÃO-->
+                <input type="submit" name="submit" id="submit">
+                <br>
+
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
